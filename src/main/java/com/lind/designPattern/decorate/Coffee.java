@@ -1,5 +1,8 @@
 package com.lind.designPattern.decorate;
 
+/**
+ * 饮料-茶.
+ */
 public class Coffee extends Drink {
   public Coffee() {
     super.setName("咖啡");

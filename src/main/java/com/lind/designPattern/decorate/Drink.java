@@ -1,5 +1,8 @@
 package com.lind.designPattern.decorate;
 
+/**
+ * 饮料基类.
+ */
 public abstract class Drink {
   private String name;
   private double price;

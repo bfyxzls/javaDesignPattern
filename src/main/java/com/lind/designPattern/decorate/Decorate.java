@@ -1,5 +1,8 @@
 package com.lind.designPattern.decorate;
 
+/**
+ * 饮料-装饰器.
+ */
 public class Decorate extends Drink {
   private Drink drink;
 

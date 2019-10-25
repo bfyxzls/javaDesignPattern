@@ -17,7 +17,7 @@ public class DecorateTest {
     Decorate sugar = new SugarDecorate(milk);
     System.out.println(sugar.printer());
     System.out.println("总计：" + sugar.cost());
-    System.out.println("-----------------------");
+    System.out.println("----- ------------------");
     Drink tea = new Tea();
     sugar = new SugarDecorate(tea);
     System.out.println(sugar.printer());
