@@ -16,7 +16,7 @@ public abstract class Decorate extends Drink {
   }
 
   /**
-   * 计算价格.
+   * 计算原品和所有装饰器的价格.
    *
    * @return
    */

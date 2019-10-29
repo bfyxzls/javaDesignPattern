@@ -1,8 +1,11 @@
 package com.lind.designPattern.decorate2;
 
+/**
+ * 超人的飞机装饰器.
+ */
 public class SuperManFlyDecorator extends FlyDecorator {
-    public SuperManFlyDecorator(Hamun hamun) {
-        super(hamun);
+    public SuperManFlyDecorator(Human human) {
+        super(human);
     }
 
     @Override

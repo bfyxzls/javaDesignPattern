@@ -1,4 +1,14 @@
 package com.lind.designPattern.decorate2;
 
-public class SuperMan extends Hamun {
+/**
+ * 超人.
+ */
+public class SuperMan extends Human {
+    private String food;
+    private String work;
+
+    public SuperMan(String food, String work) {
+        this.food = food;
+        this.work = work;
+    }
 }

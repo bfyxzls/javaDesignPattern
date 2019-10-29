@@ -1,16 +1,22 @@
 package com.lind.designPattern.decorate2;
 
-public abstract class FlyDecorator extends Hamun{
+/**
+ * 飞行装饰器.
+ */
+public abstract class FlyDecorator extends Human {
     protected abstract void fly();
-    private  Hamun hamun;
 
-    public FlyDecorator(Hamun hamun) {
-        this.hamun = hamun;
+    private Human human;
+
+    public FlyDecorator(Human human) {
+        this.human = human;
     }
 
     @Override
     public void run() {
-        hamun.run();
+        if (human != null) {
+            human.run();
+        }
         fly();
     }
 }
