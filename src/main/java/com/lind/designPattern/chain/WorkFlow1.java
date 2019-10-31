@@ -4,10 +4,10 @@ public class WorkFlow1 extends WorkFlow {
 
     @Override
     public void initCommand() {
-        ChainHandler chainHandler = new CreateCommand();
-        chainHandler.setNext(new EditCommand())
-                .setNext(new RemoveCommand())
-                .setNext(new ReadCommand());
+        ChainHandler chainHandler = new CreateService();
+        chainHandler.setNext(new EditService())
+                .setNext(new RemoveService())
+                .setNext(new ReadService());
         setCommand(chainHandler);
     }
 }
