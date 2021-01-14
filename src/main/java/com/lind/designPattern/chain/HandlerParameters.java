@@ -1,5 +1,8 @@
 package com.lind.designPattern.chain;
 
+/**
+ * 链条处理的参数.
+ */
 public class HandlerParameters {
     private String CommandType;
     private String data;

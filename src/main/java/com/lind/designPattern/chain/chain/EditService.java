@@ -1,4 +1,7 @@
-package com.lind.designPattern.chain;
+package com.lind.designPattern.chain.chain;
+
+import com.lind.designPattern.chain.ChainHandler;
+import com.lind.designPattern.chain.HandlerParameters;
 
 public class EditService extends ChainHandler {
     @Override

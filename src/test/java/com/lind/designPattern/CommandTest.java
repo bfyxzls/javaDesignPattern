@@ -1,6 +1,9 @@
 package com.lind.designPattern;
 
 import com.lind.designPattern.command.*;
+import com.lind.designPattern.command.bll.BuyStock;
+import com.lind.designPattern.command.bll.ClearStock;
+import com.lind.designPattern.command.bll.SellStock;
 import org.junit.Test;
 
 public class CommandTest {
@@ -12,11 +15,11 @@ public class CommandTest {
         SellStock sellStockOrder = new SellStock(abcStock);
         ClearStock clearStock=new ClearStock(abcStock);
 
-        Broker broker = new Broker();
-        broker.takeOrder(buyStockOrder);
-        broker.takeOrder(sellStockOrder);
-        broker.takeOrder(clearStock);
+        CommandManager commandManager = new CommandManager();
+        commandManager.add(buyStockOrder);
+        commandManager.add(sellStockOrder);
+        commandManager.add(clearStock);
 
-        broker.placeOrders();
+        commandManager.run();
     }
 }

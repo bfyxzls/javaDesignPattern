@@ -1,7 +1,7 @@
 package com.lind.designPattern.decorate;
 
 /**
- * 饮料基类.
+ * 饮料基类，被装饰的对象基类，装饰器需要继承它.
  */
 public abstract class Drink {
   private String name;

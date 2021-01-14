@@ -1,12 +1,12 @@
 package com.lind.designPattern.decorate;
 
 /**
- * 饮料-装饰器.
+ * 饮料装饰器基类,所有装饰饮料的decorate都需要继承它.
  */
-public abstract class Decorate extends Drink {
+public abstract class AbstractDrinkDecorate extends Drink {
   private Drink drink;
 
-  public Decorate(Drink drink) {
+  public AbstractDrinkDecorate(Drink drink) {
     this.drink = drink;
   }
 

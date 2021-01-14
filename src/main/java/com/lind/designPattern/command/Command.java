@@ -3,6 +3,6 @@ package com.lind.designPattern.command;
 /**
  * 命令接口.
  */
-public interface Order {
+public interface Command {
     void execute();
 }
