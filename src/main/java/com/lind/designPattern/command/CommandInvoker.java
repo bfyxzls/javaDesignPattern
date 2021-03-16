@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 命令调用者.
  */
-public class CommandManager {
+public class CommandInvoker {
     private List<Command> commandList = new ArrayList<Command>();
 
     public void add(Command command) {

@@ -1,25 +1,25 @@
 package com.lind.designPattern;
 
 import com.lind.designPattern.command.*;
-import com.lind.designPattern.command.bll.BuyStock;
-import com.lind.designPattern.command.bll.ClearStock;
-import com.lind.designPattern.command.bll.SellStock;
+import com.lind.designPattern.command.bll.BuyCommand;
+import com.lind.designPattern.command.bll.ClearCommand;
+import com.lind.designPattern.command.bll.SellCommand;
 import org.junit.Test;
 
 public class CommandTest {
     @Test
     public void commandOrder() {
-        Stock abcStock = new Stock();
+        CommandReceiver commandReceiver = new CommandReceiver();
 
-        BuyStock buyStockOrder = new BuyStock(abcStock);
-        SellStock sellStockOrder = new SellStock(abcStock);
-        ClearStock clearStock=new ClearStock(abcStock);
+        BuyCommand buyCommandOrder = new BuyCommand(commandReceiver);
+        SellCommand sellCommandOrder = new SellCommand(commandReceiver);
+        ClearCommand clearCommand =new ClearCommand(commandReceiver);
 
-        CommandManager commandManager = new CommandManager();
-        commandManager.add(buyStockOrder);
-        commandManager.add(sellStockOrder);
-        commandManager.add(clearStock);
+        CommandInvoker commandInvoker = new CommandInvoker();
+        commandInvoker.add(buyCommandOrder);
+        commandInvoker.add(sellCommandOrder);
+        commandInvoker.add(clearCommand);
 
-        commandManager.run();
+        commandInvoker.run();
     }
 }
