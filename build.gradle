@@ -48,4 +48,6 @@ repositories {
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     testCompile 'org.springframework.boot:spring-boot-starter-test'
+    compile 'com.netflix.hystrix:hystrix-core:1.5.9'
+
 }
